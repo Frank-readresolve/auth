@@ -1,6 +1,9 @@
 -- Crypted password decoded = password
 
-INSERT INTO `custom_user` VALUES (1,'T','Charles','DARWIN','$2a$10$VdQQpPC9NPCf4AF96aedIOpQ6/5NYoyBzX4a.ncqyanBcS5joxNWi','darwin','T','T','T'),
+INSERT INTO `custom_user` 
+	(id, account_non_expired, firstname, lastname, password, username, account_non_locked, credentials_non_expired, enabled) 
+VALUES 
+	(1,'T','Charles','DARWIN','$2a$10$VdQQpPC9NPCf4AF96aedIOpQ6/5NYoyBzX4a.ncqyanBcS5joxNWi','darwin','T','T','T'),
 	(2,'T','Albert','EINSTEIN','$2a$10$VdQQpPC9NPCf4AF96aedIOpQ6/5NYoyBzX4a.ncqyanBcS5joxNWi','einstein','T','T','T'),
     (3,'T','William','SHAKESPEARE','$2a$10$VdQQpPC9NPCf4AF96aedIOpQ6/5NYoyBzX4a.ncqyanBcS5joxNWi','shakespeare','T','T','T');
 
