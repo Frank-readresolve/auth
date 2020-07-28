@@ -38,12 +38,12 @@ public class PrivateController {
     }
 
     /**
-     * Accessible if fully authenticated (not anonymous).
+     * Accessible if authenticated.
      *
-     * @return "Hello fully authenticated!"
+     * @return "Hello authenticated user!"
      */
     @GetMapping("/authenticated")
     public String secured() {
-	return "Hello fully authenticated!";
+	return "Hello authenticated user!";
     }
 }
